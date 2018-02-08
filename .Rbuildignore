@@ -2,3 +2,4 @@
 ^\.Rproj\.user$
 ^docs$
 ^book$
+^_pkgdown\.yml$

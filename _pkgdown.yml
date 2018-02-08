@@ -1,0 +1,21 @@
+template:
+  params:
+    bootswatch: flatly
+    ganalytics: UA-76139189-1
+
+navbar:
+  title: "bookdownunder"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Function Reference"
+      href: reference/index.html
+    - text: "Vignettes"
+      href: articles/index.html
+      menu:
+        - text: "Test vignette"
+          href: articles/book-renderer.html
+
+  right:
+    - icon: fa-github
+      href: https://github.com/DavisVaughan/bookdownunder
