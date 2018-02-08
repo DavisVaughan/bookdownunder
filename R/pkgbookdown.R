@@ -8,11 +8,12 @@ render_pkgbookdown <- function(path) {
 
 copy_book_to_vignettes <- function(path) {
 
-  if(fs::dir_exists("vignettes/_book")) {
-    fs::dir_delete("vignettes/_book")
+  if(fs::dir_exists("vignettes/book")) {
+    fs::dir_delete("vignettes/book")
   }
 
-  fs::dir_copy(paste0(path, "/_book"), new_path = "vignettes/")
+  # Rename to be book not _book so github pages doesn't ignore it
+  fs::dir_copy(paste0(path, "/_book"), new_path = "vignettes/book")
 }
 
 # use_pkgbookdown("book")
